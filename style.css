@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+}
+body {
+  background: #FDFBFA;
+  color: #333;
+  line-height: 1.6;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+header {
+  padding: 2rem;
+  text-align: center;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  margin-bottom: 0.5rem;
+}
+header p {
+  color: #666;
+  font-size: 1rem;
+}
+.hero-image {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  object-fit: cover;
+  margin: 2rem auto;
+  display: block;
+}
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 2rem;
+}
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 1rem 0 0.5rem;
+}
+.card button {
+  margin-top: 1rem;
+  background: #30D5C8;
+  border: none;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+.card button:hover {
+  background: #28B7AB;
+  transform: scale(1.05);
+}
+.highlight-box {
+  background: #FFF5F5;
+  margin: 2rem auto;
+  max-width: 600px;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  border: 1px solid #F5A623;
+}
+.highlight-box h2 {
+  color: #D32F2F;
+  margin-bottom: 1rem;
+}
+.highlight-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  text-align: left;
+  display: inline-block;
+}
+.highlight-box li {
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+.highlight-box li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #30D5C8;
+}
+.highlight-box button {
+  background: #D32F2F;
+  padding: 0.75rem 2rem;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+.highlight-box button:hover {
+  background: #B71C1C;
+}
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  background: #F4F4F4;
+  text-align: center;
+}
+.pricing {
+  text-align: center;
+  padding: 2rem;
+}
+.pricing h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.pricing-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+.price-card {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.price-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.price-card button {
+  background: #30D5C8;
+  transition: background 0.3s ease;
+  border: none;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.price-card button:hover {
+  background: #28B7AB;
+}
+footer {
+  background: #3B4D61;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+footer a {
+  color: #30D5C8;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+  color: #28B7AB;
+}
+button:focus {
+  outline: 2px solid #F5A623;
+  outline-offset: 2px;
+}
